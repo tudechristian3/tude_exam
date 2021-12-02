@@ -32,6 +32,12 @@ class MY_Controller extends MX_Controller {
       	//$this->load->view('includes/footer_login',$data);
 	}
 
+	public function load_admin($page, $data = array()){
+      	//$this->load->view('includes/header_login',$data);
+      	$this->load->view($page,$data);
+      	//$this->load->view('includes/footer_login',$data);
+	}
+
 // 	public function load_home($page, $data = array()){
 // 		$data['users'] = $this->MY_Model->getRows('user');
 // 		$data['res'] = $this->MY_Model->getRows('residence');
